@@ -40,7 +40,14 @@ public class SecondFragment extends Fragment {
                     Toast.makeText(getActivity(), "관리자 로그인!", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    Toast.makeText(getActivity(), "잘못된 사용자 정보입니다.", Toast.LENGTH_SHORT).show();
+                    if (id.equals("admin")) {
+//                        ID는 맞게 입력
+                        Toast.makeText(getActivity(), "비번이 틀렸습니다.", Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+//                        ID 부터 잘못 입력
+                        Toast.makeText(getActivity(), "잘못된 아이디입니다.", Toast.LENGTH_SHORT).show();
+                    }
                 }
 
 
