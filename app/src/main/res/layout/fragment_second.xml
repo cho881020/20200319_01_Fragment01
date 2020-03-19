@@ -15,9 +15,25 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/lightText" />
+        android:textColor="@color/lightText"
+        android:hint="아이디 입력"
+        android:textColorHint="@color/lightHint"
+        android:inputType="textEmailAddress"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/password"
+        android:textColor="@color/lightText"/>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/pw_input_hint"
+        android:textColorHint="@color/lightHint"
+        android:textColor="@color/lightText"/>
 
 
 </LinearLayout>

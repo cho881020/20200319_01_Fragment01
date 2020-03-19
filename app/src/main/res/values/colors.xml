@@ -5,6 +5,7 @@
     <color name="colorAccent">#FF0000</color>
 
     <color name="lightText">#FFFFFF</color>
+    <color name="lightHint">#EFEFEF</color>
     <color name="greyBlue">#697990</color>
 
 </resources>
