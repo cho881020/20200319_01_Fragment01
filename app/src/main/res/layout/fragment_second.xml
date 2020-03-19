@@ -1,39 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#000000"
-    android:padding="10dp"
-    android:orientation="vertical">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="아이디"
-        android:textColor="@color/lightText"/>
-
-    <EditText
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/lightText"
-        android:hint="아이디 입력"
-        android:textColorHint="@color/lightHint"
-        android:inputType="textEmailAddress"/>
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:padding="10dp"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="@string/password"
-        android:textColor="@color/lightText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디"
+            android:textColor="@color/lightText"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:hint="@string/pw_input_hint"
-        android:textColorHint="@color/lightHint"
-        android:textColor="@color/lightText"/>
+        <EditText
+            android:id="@+id/idEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightText"
+            android:hint="아이디 입력"
+            android:textColorHint="@color/lightHint"
+            android:inputType="textEmailAddress"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/password"
+            android:textColor="@color/lightText"/>
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/pwEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/pw_input_hint"
+            android:textColorHint="@color/lightHint"
+            android:textColor="@color/lightText"/>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인" />
+
+    </LinearLayout>
+</layout>
